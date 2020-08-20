@@ -315,6 +315,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
   rails_admin (~> 2.0)
+  rake
   sass-rails (>= 6)
   selenium-webdriver
   spring
