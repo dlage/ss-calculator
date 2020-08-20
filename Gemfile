@@ -58,6 +58,7 @@ gem 'rails_admin', '~> 2.0'
 
 # Auth with devise
 gem 'devise', '~> 4.7'
+gem 'devise-bootstrap-views', '~> 1.0'
 gem 'omniauth-github'
 gem 'omniauth-openid'
 gem 'omniauth-google-oauth2'

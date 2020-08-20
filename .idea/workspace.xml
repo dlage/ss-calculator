@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6389a56-ae12-4279-bc1d-76334fb6e4f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/pages_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/pages_controller_test.rb" afterDir="false" />
+    <list default="true" id="d6389a56-ae12-4279-bc1d-76334fb6e4f6" name="Default Changelist" comment="First working version with devise+rails_admin">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/stylesheets/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_content.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_top_navigation.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/admin.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200817200957_devise_create_admins.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200817200957_devise_create_admins.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss-calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ss-calculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
+        <option value="ERB File" />
       </list>
     </option>
   </component>
@@ -63,20 +69,18 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,7 +102,6 @@
     <configuration name="docker-compose.yml[db, web]: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="commandLineOptions" value="--build" />
           <option name="services">
             <list>
               <option value="db" />
@@ -121,7 +124,8 @@
       <option name="presentableId" value="Default" />
       <updated>1597686467739</updated>
       <workItem from="1597686468787" duration="5768000" />
-      <workItem from="1597747634273" duration="9261000" />
+      <workItem from="1597747634273" duration="16339000" />
+      <workItem from="1597855104277" duration="5953000" />
     </task>
     <task id="LOCAL-00001" summary="Install rails_admin and devise. Start setting it up.">
       <created>1597695591871</created>
@@ -130,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597695591871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First working version with devise+rails_admin">
+      <created>1597818691547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597818691547</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,25 +149,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Install rails_admin and devise. Start setting it up." />
-    <option name="LAST_COMMIT_MESSAGE" value="Install rails_admin and devise. Start setting it up." />
+    <MESSAGE value="First working version with devise+rails_admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="First working version with devise+rails_admin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Docker" timestamp="1597687559241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Docker/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597687559241" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1597761418307">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1597855191047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597761418307" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597761256987">
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597855191047" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597855201875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597761256987" />
-    <state x="585" y="107" key="CommitChangelistDialog2" timestamp="1597695591093">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597855201875" />
+    <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597832335080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="107" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597695591093" />
+    <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597832335080" />
+    <state x="585" y="107" key="CommitChangelistDialog2" timestamp="1597917079584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="107" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597917079584" />
     <state x="798" y="388" key="DockerComposeFileDialog" timestamp="1597687575523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,10 +185,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597687573558" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597695595550">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597818693333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597695595550" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597818693333" />
     <state x="832" y="364" key="cloudConfig.SelfSettingsDialog" timestamp="1597761380237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -181,9 +197,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597694693345" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1597750172554">
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1597831549088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597750172554" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597831549088" />
   </component>
 </project>

@@ -18,8 +18,10 @@
         <% end %>
     </script>
   <% end %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+  <%= render 'layouts/top_navigation' %>
+  <%= render 'layouts/content' %>
+  <%= render 'layouts/footer' %>
+
   </body>
 </html>

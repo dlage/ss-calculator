@@ -85,6 +85,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (1.1.0)
     erubi (1.9.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
@@ -303,6 +304,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise (~> 4.7)
+  devise-bootstrap-views (~> 1.0)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   omniauth-facebook
