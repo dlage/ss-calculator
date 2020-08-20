@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6389a56-ae12-4279-bc1d-76334fb6e4f6" name="Default Changelist" comment="Fix tests for admins and users - email key was missing">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d6389a56-ae12-4279-bc1d-76334fb6e4f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_toasts.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_content.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_content.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss-calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ss-calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/admins.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/admins.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +52,9 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.leinardi.pycharm.pylint.PylintConfigurable" />
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml[db, web]: Compose Build">
+  <component name="RunManager" selected="Docker.docker-compose.yml[db, web]: Compose Deployment">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -125,7 +125,7 @@
       <updated>1597686467739</updated>
       <workItem from="1597686468787" duration="5768000" />
       <workItem from="1597747634273" duration="16339000" />
-      <workItem from="1597855104277" duration="8356000" />
+      <workItem from="1597855104277" duration="10596000" />
     </task>
     <task id="LOCAL-00001" summary="Install rails_admin and devise. Start setting it up.">
       <created>1597695591871</created>
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597917687436</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix tests for admins and users - email key was missing">
+      <created>1597919999993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597919999993</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,10 +185,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597832335080" />
-    <state x="585" y="107" key="CommitChangelistDialog2" timestamp="1597919329274">
+    <state x="585" y="107" key="CommitChangelistDialog2" timestamp="1597919999422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="107" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597919329274" />
+    <state x="585" y="107" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597919999422" />
     <state x="798" y="388" key="DockerComposeFileDialog" timestamp="1597687575523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -194,10 +201,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597687573558" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597918894932">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1597920016664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597918894932" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597920016664" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597920005606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1740.1040@0.0.1920.1040" timestamp="1597920005606" />
     <state x="832" y="364" key="cloudConfig.SelfSettingsDialog" timestamp="1597761380237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
