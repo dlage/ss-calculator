@@ -106,4 +106,4 @@ yarn-debug.log*
 !/storage/.keep
 
 # Ignore IJ IDE directory
-.idea
+/.idea/
