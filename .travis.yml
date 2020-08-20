@@ -5,3 +5,5 @@ rvm:
 bundler_args: --without production
 services:
   - postgresql
+before_script:
+  - psql -c 'create database myapp_test;' -U postgres
