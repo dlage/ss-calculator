@@ -64,4 +64,7 @@ Rails.application.configure do
 
   # Reload everything besides classes
   config.reload_classes_only_on_change = false
+
+  # Allow console in private networks
+  config.web_console.whitelisted_ips = %w[10.0.0.0/8 172.16.0.0/12 192.168.0.0/16]
 end
