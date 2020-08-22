@@ -10,7 +10,7 @@ ask :deployer_username, 'deployer'
 server "usaserver4.senolage.net", user: fetch(:deployer_username), roles: %w{app db web}, :primary => true
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :deploy_to, "/srv/www/ss-calculator-staging"
-set :rails_env, 'staging'
+set :rails_env, 'production'
 
 # role-based syntax
 # ==================
