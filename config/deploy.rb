@@ -25,7 +25,7 @@ set :rvm_ruby_version, '2.6.6'
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-append :linked_files, 'config/secrets.yml', 'config/master.key', 'config/credentials.yml.enc', '.env'
+append :linked_files, 'config/secrets.yml', 'config/master.key', 'config/credentials.yml.enc', '.env', 'tmp/restart.txt'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"

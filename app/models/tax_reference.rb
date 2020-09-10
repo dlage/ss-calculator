@@ -1,4 +1,5 @@
 class TaxReference < ApplicationRecord
+  default_scope { order(year: :desc) }
   validates :year, uniqueness: true
   MAX_MONTHLY_HOURS = 172
 
