@@ -5,20 +5,20 @@
 <p><%= number_to_percentage(@tax_reference.worker_percentage, precision: 2) %></p>
 <p><%= number_to_percentage(@tax_reference.employer_percentage, precision: 2) %></p>
 
-<table>
+<table class="table">
   <thead>
   <tr>
-    <th><%= t('Number of Hours') %></th>
-    <th><%= t('Employer (extra)') %></th>
-    <th><%= t('Worker (discount)') %></th>
-    <th><%= t('Total contribution') %></th>
+    <th scope="col"><%= t('Number of Hours') %></th>
+    <th scope="col"><%= t('Employer (extra)') %></th>
+    <th scope="col"><%= t('Worker (discount)') %></th>
+    <th scope="col"><%= t('Total contribution') %></th>
   </tr>
   </thead>
   <tbody>
   <% hourly_contribution = @tax_reference.hourly_wage / 100 %>
   <% (@tax_reference.min_monthly_hours..TaxReference::MAX_MONTHLY_HOURS).each do |n_hours| %>
     <tr>
-      <td><%= n_hours %></td>
+      <td scope="row"><%= n_hours %></td>
       <td><%= number_to_currency(@tax_reference.employer_contribution(n_hours), locale: :pt) %></td>
       <td><%= number_to_currency(@tax_reference.worker_contribution(n_hours), locale: :pt) %></td>
       <td><%= number_to_currency(@tax_reference.total_contribution(n_hours), locale: :pt) %></td>
