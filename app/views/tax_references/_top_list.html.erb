@@ -1,0 +1,13 @@
+<ul class="nav nav-tabs" role="tablist">
+  <% tax_references.each do |tax_ref| %>
+    <li class="nav-item">
+      <% item_class = 'nav-link' %>
+      <% if not @tax_reference.nil? and tax_ref.year == @tax_reference.year %>
+        <% item_class.concat(' active') %>
+      <% end %>
+
+      <%= link_to tax_ref.year, {controller: 'tax_references', action: :show, year: tax_ref.year},
+                  class: item_class %>
+    </li>
+  <% end %>
+</ul>
