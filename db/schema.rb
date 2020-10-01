@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_09_112404) do
+ActiveRecord::Schema.define(version: 2020_10_01_160115) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,14 @@ ActiveRecord::Schema.define(version: 2020_09_09_112404) do
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_admins_on_unlock_token", unique: true
+  end
+
+  create_table "salaries", force: :cascade do |t|
+    t.integer "year"
+    t.float "hourly_rate"
+    t.json "hour_table"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "tax_references", force: :cascade do |t|
