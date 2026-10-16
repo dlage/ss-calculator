@@ -1,21 +1,27 @@
-version: '3'
 services:
   db:
-    image: postgres
+    image: postgres:18
     volumes:
-      - psql:/var/lib/postgresql/data
+      - psql:/var/lib/postgresql
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: development-only
+      POSTGRES_DB: ss_calculator_development
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d ss_calculator_development"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
   web:
     build: .
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
-    volumes:
-      - .:/myapp
-      - webtmp:/myapp/tmp
+    command: ["sh", "-c", "bundle exec rails db:prepare && exec bundle exec rails server -b 0.0.0.0"]
+    environment:
+      DATABASE_URL: postgres://postgres:development-only@db/ss_calculator_development
+      TEST_DATABASE_URL: postgres://postgres:development-only@db/ss_calculator_test
+      APP_REHEARSAL: '1'
     ports:
-      - "3000:3000"
+      - '127.0.0.1:3001:3000'
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 volumes:
   psql:
-  webtmp:

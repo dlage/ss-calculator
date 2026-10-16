@@ -7,9 +7,6 @@ require "capistrano/deploy"
 # Include rails specific deploy scripts
 require 'capistrano/rails'
 
-# Include rvm helpers
-require 'capistrano/rvm'
-
 # Include passenger helpers
 require 'capistrano/passenger'
 

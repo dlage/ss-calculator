@@ -1,15 +1,13 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  year: 1
-  hourly_wage: 1.5
+current:
+  year: 2026
+  hourly_wage: 10
   min_monthly_hours: 1
-  worker_percentage: 1.5
-  employer_percentage: 1.5
+  worker_percentage: 11
+  employer_percentage: 23.75
 
-two:
-  year: 1
-  hourly_wage: 1.5
+previous:
+  year: 2025
+  hourly_wage: 9
   min_monthly_hours: 1
-  worker_percentage: 1.5
-  employer_percentage: 1.5
+  worker_percentage: 11
+  employer_percentage: 23.75

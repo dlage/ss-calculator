@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.17.1"
+lock "~> 3.19"
 
 set :application, "ss-calculator"
 set :repo_url, "git@github.com:dlage/ss-calculator.git"
@@ -10,7 +10,7 @@ set :repo_url, "git@github.com:dlage/ss-calculator.git"
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
 set :deploy_to, "/srv/www/ss-calculator"
-set :rvm_ruby_version, '2.7.6'
+set :default_env, { path: '/opt/ruby/3.4.11/bin:/usr/local/bin:/usr/bin:/bin', rails_groups: 'assets' }
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -25,7 +25,7 @@ set :rvm_ruby_version, '2.7.6'
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-append :linked_files, 'config/secrets.yml', 'config/master.key', 'config/credentials.yml.enc', '.env', 'tmp/restart.txt'
+append :linked_files, 'config/master.key', 'config/credentials.yml.enc', '.env'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"

@@ -1,20 +1,25 @@
 {
-  "name": "myapp",
+  "name": "ss-calculator",
   "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/application.js --bundle --sourcemap --format=iife --outfile=app/assets/builds/application.js",
+    "build:css": "esbuild app/javascript/stylesheets/application.css --bundle --minify --outfile=app/assets/builds/application.css"
+  },
   "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.3.0",
-    "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1",
+    "@rails/ujs": "^7.1.0",
+    "@rails/activestorage": "^8.1.0",
+    "@rails/actioncable": "^8.1.0",
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
     "toastr": "^2.1.4",
     "turbolinks": "^5.2.0"
   },
-  "version": "0.1.0",
   "devDependencies": {
-    "jest": "^26.4.1",
-    "webpack-dev-server": "^3.11.0"
+    "esbuild": "^0.25.0"
   }
 }

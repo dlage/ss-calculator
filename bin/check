@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+export RAILS_ENV=test
+export APP_REHEARSAL=1
+export SECRET_KEY_BASE="${SECRET_KEY_BASE:-ss-calculator-isolated-test-secret-key-base}"
+npm ci
+npm run build
+npm run build:css
+bundle exec rails db:prepare
+bundle exec rails assets:precompile
+bundle exec rails zeitwerk:check
+bundle exec rails test
