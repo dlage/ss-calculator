@@ -10,7 +10,7 @@ set :repo_url, "git@github.com:dlage/ss-calculator.git"
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
 set :deploy_to, "/srv/www/ss-calculator"
-set :rvm_ruby_version, '2.6.6'
+set :rvm_ruby_version, '2.7.6'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
